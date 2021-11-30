@@ -2,10 +2,128 @@
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
+#root{
 
-height: 100vh;
-    background: linear-gradient(0deg,   #d9dbd4 80%, #009688 80%)
+    height: 100vh;
+    background: linear-gradient(0deg,   #d9dbd4 85%, #009688 85%)
+}
+
+
+
+.clearfix {
+    content: "";
+    display: table;
+    clear: both;    
+}
+.frame{
+    padding: 25px;
+}
+
+/* ***************left_side**************** */
+.left{
+    float: left;
+    height: 95vh;
+    width:55vh ;
+}
+
+.user{
+    height: 7vh;
+    background-color: silver;
+}
+
+.alert{
+    height: 8vh;
+    background-color: skyblue;
+}
+.input{
+    text-align: center;
+    padding: 0.5vh;
+    background-color: slategray;
+}
+.in-put {
+    width: 53vh;
+    height: 3vh;
+}
+
+.users-list{
+    height: 76vh;
+    background-color: yellow;
+}
+
+
+/* ***************reight_side**************** */
+
+.right{
+    float: left;
+    height: 95vh;
+    width:95vh ;
+
+}
+
+.reuser{
+    height: 7vh;
+}
+
+.bkg{
+    height:81vh;
+    background-image: url(../img/mine.jpg);
+}
+
+.write{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 7vh;
+    text-align: center;
+}
+.write-in{
+    width: 75vh;
+    height: 4.5vh;
+    border-radius:5px ;
+    
+}
+
+/* ***************************debug*************************** */
+
+.debug .left{
+        background-color: red;
+}
+
+.debug .user{
+    background-color: silver;
+}
+
+.debug .alert{
+    background-color: skyblue;
+}
+.debug .input{
+    background-color: slategray;
+}
+
+.debug .users-list{
+    background-color: yellow;
+}
+
+
+
+.debug .right{
+    float: left;
+    height: 95vh;
+    width:95vh ;
+    background-color: rgb(0, 60, 255);
+
+}
+.debug .reuser{
+    background-color: rgb(155, 155, 155);
+}
+
+/* .debug .bkg{
+    background-color: yellowgreen;
+} */
+
+.write{
+    background-color: thistle;
 }
