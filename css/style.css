@@ -44,9 +44,9 @@
     right: 65px;
 }
 
+
 .ava{
     display: inline-block;
-    background-image:url(../img/avatar_io.jpg);
     background-size: cover;
     height: 50px;
     width: 50px;
@@ -61,7 +61,8 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
-    left: 70px; 
+    left: 60px; 
+    cursor:pointer;
 }
 
 
@@ -71,27 +72,82 @@
 
 .alert{
     height: 8vh;
-    background-color: #8edafc;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: #8EDAFC;
+    position: relative;
 }
+
+.bell {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .87);
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 20px;
+ }
+
+ .bell i {
+    color: #8EDAFC;
+    line-height: 50px;
+    font-size: 20px;
+ }
+
+ .active-notification {
+    margin: 0 10px;
+    position: absolute;
+    left: 70px;
+ }
+ .active-notification p {
+    font-size: 14px;
+ }
+ .active-notification span {
+    color: rgba(0, 0, 0, .55);
+    font-size: 12px;
+    text-decoration: underline;
+    cursor: pointer;
+ }
+
 .input{
     text-align: center;
     padding: 0.5vh;
     background-color: #fafafa;
+    position: relative;
+}
+
+.input i{
+    font-size: 18px;
+    color:#b1b1b1;
+    position: absolute;
+    bottom: 11px;
+    left: 35px;
+    cursor: pointer;
 }
 .in-put {
     width: 53vh;
     height: 3vh;
     border-radius: 5px;
     border:1px solid rgb(221, 221, 221);
+    padding-left: 60px;
 }
 
-.users-list{
+.contact-list{
     height: 76vh;
     background-color: #ffffff;
 }
 
+.contact-box{
+    height: 8vh;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e2e2;
+}
 
-/* ***************reight_side**************** */
+
+
+/* ***************right_side**************** */
 
 .right{
     float: left;
@@ -102,7 +158,40 @@
 
 .reuser{
     height: 7vh;
+    display: flex;
+    align-items: center;
     background-color: #eaeaea;
+}
+
+.luisa_{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: 160px;
+}
+
+.ava_{
+    display: inline-block;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right:15px ;
+}
+
+.icons_{
+    color: #b1b1b1;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    left: 150px; 
+    cursor:pointer ;
+}
+
+.fa-paperclip{
+    margin: 0 15px;
 }
 
 .bkg{
@@ -112,13 +201,15 @@
 
 .write{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: 7vh;
     text-align: center;
     background-color: #f3eeea;
-    
+    font-size: 25PX;
+    color: #b1b1b1;    
 }
+
 .write-in{
     width: 75vh;
     height: 4.5vh;
@@ -162,3 +253,4 @@
 /* .write{
     background-color: thistle;
 } */
+
