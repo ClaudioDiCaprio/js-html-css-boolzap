@@ -1,0 +1,11 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+
+height: 100vh;
+    background: linear-gradient(0deg,   #d9dbd4 80%, #009688 80%)
+}
