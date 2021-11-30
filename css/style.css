@@ -137,14 +137,48 @@
 .contact-list{
     height: 76vh;
     background-color: #ffffff;
+    overflow: auto;
 }
 
 .contact-box{
     height: 8vh;
     background-color: #ffffff;
     border-bottom: 1px solid #e2e2e2;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.contact-box:hover {
+    background-color: #ebebeb;
 }
 
+.contact-box:last-child {
+   border-bottom: none;
+}
+
+.contact-box img{
+    margin: 10px;
+}
+.named{
+    align-self: flex-start;
+    padding-top: 10px;
+    margin: 0;
+}
+
+/* .contact-box img{
+    position: relative;
+    right: 130px;
+}
+
+
+.ava-{
+    display: inline-block;
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right:15px ;
+} */
 
 
 /* ***************right_side**************** */
