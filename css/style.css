@@ -198,7 +198,7 @@
 }
 
 .luisa_{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     position: relative;
     right: 160px;
@@ -211,6 +211,16 @@
     width: 50px;
     border-radius: 50%;
     margin-right:15px ;
+}
+
+.last-ac{
+    margin-top: 10px ;
+}
+
+.access{
+    font-size: 13px;
+    color:#6e6e6e;
+    
 }
 
 .icons_{
@@ -233,6 +243,8 @@
     background-image: url(../img/mine.jpg);
 }
 
+
+
 .write{
     display: flex;
     justify-content: space-between;
@@ -251,11 +263,40 @@
     border:1px solid rgb(221, 221, 221);
 }
 
+.mailing-box{
+    position: relative;
+}
+.sent {
+    margin-left: auto;
+    background-color: #D6F9BB;
+    min-width: 20%;
+    max-width: 70%;
+    min-height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+ }
+
+.mailing-box span.date{
+    color:#b1b1b1;
+    position: absolute;
+    bottom: 2px;
+    right: 10px;
+    font-size: 12px;
+}
+
 /* ***************************debug*************************** */
 
-.debug .left{
+/* .debug .left{
         background-color: red;
-}
+} */
 /* 
 .debug .user{
     background-color: silver;
@@ -272,10 +313,10 @@
     background-color: yellow;
 } */
 
-.debug .right{
+/* .debug .right{
     background-color: rgb(0, 60, 255);
 
-}
+} */
 /* .debug .reuser{
     background-color: rgb(155, 155, 155);
 } */
