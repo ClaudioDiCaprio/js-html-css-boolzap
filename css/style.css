@@ -31,26 +31,63 @@
 
 .user{
     height: 7vh;
-    background-color: silver;
+    background-color: #eaeaea;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #dadada;
+}
+
+.luisa{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: 65px;
+}
+
+.ava{
+    display: inline-block;
+    background-image:url(../img/avatar_io.jpg);
+    background-size: cover;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right:15px ;
+}
+
+.icons{
+    color: #b1b1b1;
+    font-size: 25px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    left: 70px; 
+}
+
+
+.fa-comment-alt{
+    margin: 0 15px;
 }
 
 .alert{
     height: 8vh;
-    background-color: skyblue;
+    background-color: #8edafc;
 }
 .input{
     text-align: center;
     padding: 0.5vh;
-    background-color: slategray;
+    background-color: #fafafa;
 }
 .in-put {
     width: 53vh;
     height: 3vh;
+    border-radius: 5px;
+    border:1px solid rgb(221, 221, 221);
 }
 
 .users-list{
     height: 76vh;
-    background-color: yellow;
+    background-color: #ffffff;
 }
 
 
@@ -65,6 +102,7 @@
 
 .reuser{
     height: 7vh;
+    background-color: #eaeaea;
 }
 
 .bkg{
@@ -78,12 +116,14 @@
     align-items: center;
     height: 7vh;
     text-align: center;
+    background-color: #f3eeea;
+    
 }
 .write-in{
     width: 75vh;
     height: 4.5vh;
-    border-radius:5px ;
-    
+    border-radius: 5px;
+    border:1px solid rgb(221, 221, 221);
 }
 
 /* ***************************debug*************************** */
@@ -91,39 +131,34 @@
 .debug .left{
         background-color: red;
 }
-
+/* 
 .debug .user{
     background-color: silver;
-}
+} */
 
-.debug .alert{
+/* .debug .alert{
     background-color: skyblue;
-}
-.debug .input{
+} */
+/* .debug .input{
     background-color: slategray;
-}
+} */
 
-.debug .users-list{
+/* .debug .users-list{
     background-color: yellow;
-}
-
-
+} */
 
 .debug .right{
-    float: left;
-    height: 95vh;
-    width:95vh ;
     background-color: rgb(0, 60, 255);
 
 }
-.debug .reuser{
+/* .debug .reuser{
     background-color: rgb(155, 155, 155);
-}
+} */
 
 /* .debug .bkg{
     background-color: yellowgreen;
 } */
 
-.write{
+/* .write{
     background-color: thistle;
-}
+} */
