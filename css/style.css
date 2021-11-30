@@ -256,6 +256,10 @@
     color: #b1b1b1;    
 }
 
+.write i{
+    cursor: pointer;
+}
+
 .write-in{
     width: 75vh;
     height: 4.5vh;
