@@ -268,13 +268,30 @@
     border:1px solid rgb(221, 221, 221);
 }
 
-.mailing-box{
-    position: relative;
+
+.bkg .mailing-box {
+   width: 80%;
+   /* margin: 30px auto 0; */
+   position: relative;
+   padding-top: 50px;
 }
+
+.mailing-box ul {
+    display: flex;
+    flex-direction: column;
+ }
+ .received {
+    margin-right: 800px;
+    background-color: #fff;
+ }
+ .sent {
+    margin-right:0px;
+    background-color: #D6F9BB;
+ }
 .sent {
     margin-left: auto;
     background-color: #D6F9BB;
-    min-width: 20%;
+    min-width: 30%;
     max-width: 70%;
     min-height: 50px;
     padding: 10px;
@@ -284,15 +301,12 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    position: absolute;
-    right: 100px;
-    top: 50px;
  }
 
  .received{
     margin-left: auto;
     background-color: #ffffff;
-    min-width: 20%;
+    min-width: 30%;
     max-width: 70%;
     min-height: 50px;
     padding: 10px;
@@ -302,14 +316,12 @@
     display: inline-block;
     font-size: 16px;
     border-radius: 10px;
-    position: absolute;
-    left: 100px;
-    top: 150px;
  }
 
 .mailing-box span.date{
     color:#b1b1b1;
     position: absolute;
+    padding-top: 10px;
     bottom: 2px;
     right: 10px;
     font-size: 12px;
