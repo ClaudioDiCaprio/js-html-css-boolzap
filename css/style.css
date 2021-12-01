@@ -211,6 +211,7 @@
     width: 50px;
     border-radius: 50%;
     margin-right:15px ;
+    margin-left: 35px;
 }
 
 .last-ac{
@@ -230,7 +231,7 @@
     flex-wrap: nowrap;
     justify-content: space-between;
     position: relative;
-    left: 150px; 
+    left: 110px; 
     cursor:pointer ;
 }
 
@@ -286,6 +287,24 @@
     position: absolute;
     right: 100px;
     top: 50px;
+ }
+
+ .received{
+    margin-left: auto;
+    background-color: #ffffff;
+    min-width: 20%;
+    max-width: 70%;
+    min-height: 50px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    position: absolute;
+    left: 100px;
+    top: 150px;
  }
 
 .mailing-box span.date{

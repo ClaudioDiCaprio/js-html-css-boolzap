@@ -22,7 +22,7 @@
                             alt="Io" 
                             class="ava"
                             >
-                        <span>Nome Utente</span>
+                        <span>Ma Luisa chi é??</span>
                         </div>
                         <div class="icons">
                             <i class="fas fa-circle-notch"></i>
@@ -46,7 +46,7 @@
 
                     <div class="contact-list">
 
-                        <div class="contact-box" v-for="(contact,i) in contacts">
+                        <div class="contact-box" v-for="(contact,i) in contacts" :class="{active : (contacts[reference] === contact)}" @click="callContact(i)">
                             <img 
                                 :src="`img/avatar${contact.avatar}.jpg`" 
                                 :alt="contact.name"
@@ -64,12 +64,13 @@
                     <div class="reuser">
                         <div class="luisa_">
                             <img 
-                            src="img/avatar_1.jpg"
-                            class="ava_"
+                                src="`img/avatar${contacts[reference].avatar}.jpg`"
+                                :alt="contacts[reference].name"
+                                class="ava_"
                             >
                             <div class="last-ac">
-                                <p>Nome Utente</p>
-                                <span class="access" >Ultimo accesso oggi alle</span>
+                                <p>{{contacts[reference].name}}</p>
+                                <span class="access" >Ultimo accesso oggi alle {{contacts[reference].messages[contacts[reference].messages.length - 1].date}}</span>
                             </div>
                         </div>
                         <div class="icons_">
@@ -81,10 +82,12 @@
                     <div class="bkg">
                             <div class="mailing-box">
                                <ul>
-                                  <li class="sent">
-                                     <p>Li vuoi quei kiwi?</p>
-                                     <span class="date">4-11-89 &check;&check;</span>
-                                  </li>
+                                <li 
+                                v-for="(message, index) in contacts[reference].messages"
+                                :class="[ message.status === 'sent' ? 'sent' : 'received' ]"
+                             >
+                                <p>{{message.message}}</p>
+                                <span class="date">{{message.date}}</span>
                                </ul>
                             </div>
                     </div>
