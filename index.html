@@ -87,8 +87,7 @@
                                <ul>
                                 <li 
                                 v-for="(message, index) in contacts[reference].messages"
-                                :class="[ message.status === 'sent' ? 'sent' : 'received' ]"
-                             >
+                                :class="[ message.status === 'sent' ? 'sent' : 'received' ]">
                                 <p>{{message.message}}</p>
                                 <span class="date">{{message.date}}</span>
                                </ul>
