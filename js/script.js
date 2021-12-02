@@ -113,7 +113,7 @@ const app = new Vue({
                message: this.theMsg,
                status: 'sent'
             };
-            this.pushing(msg)
+            this.pushing(msg);
 
             this.theMsg = '';
          }
@@ -121,7 +121,12 @@ const app = new Vue({
       
       recieve(){
          setTimeout(() =>{
-
+            const msg = {
+               date: '10/01/2020 ' + this.Time(),
+               message: 'stabben',
+               status: 'recived'
+            };
+            this.pushing(msg);
          },1500);
       },
     }
