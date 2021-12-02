@@ -89,6 +89,7 @@ const app = new Vue({
        ],
        reference: 0,
        theMsg:'',
+       lookTrough:``,
     },
     methods: {
        callContact(index) {
@@ -129,5 +130,16 @@ const app = new Vue({
             this.pushing(msg);
          },1500);
       },
+
+      runTrough(){
+         this.contacts.forEach(contact => {
+            
+            if(contact.name.toLowerCase().includes(this.lookTrough.toLowerCase())){
+               contact.visible = false;
+            }else if (this.lookTrough.toLowerCase === ''){
+               contact.visible = true;
+            }
+         });
+      }
     }
  });

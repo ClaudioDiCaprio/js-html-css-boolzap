@@ -44,12 +44,21 @@
                     </div>
                     <div class="input">
                         <i class="fas fa-search"></i>
-                        <input type="text" placeholder="Cerca o inizia una nuova chat" class="in-put">
+                        <input 
+                        type="text"
+                        placeholder="Cerca o inizia una nuova chat" class="in-put"
+                        v-model="lookTrough" @keyup="runTrough"
+                         >
                     </div>
 
                     <div class="contact-list">
 
-                        <div class="contact-box" v-for="(contact,i) in contacts" :class="{dark_bkg : (contacts[reference] === contact)}" @click="callContact(i)">
+                        <div 
+                        class="contact-box"
+                        v-for="(contact,i) in contacts" 
+                        :class="{dark_bkg : (contacts[reference] === contact)}" 
+                        @click="callContact(i)"
+                        v-if="contact.visible || lookTrough === ''">
                             <img 
                                 :src="`img/avatar${contact.avatar}.jpg`" 
                                 :alt="contact.name"
