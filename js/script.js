@@ -93,6 +93,13 @@ const app = new Vue({
     methods: {
        callContact(index) {
           this.reference = index;
-       }
+       },
+
+       Time() {
+         const date = new Date();
+         const time = 
+            `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
+            return time;
+      },   
     }
  });

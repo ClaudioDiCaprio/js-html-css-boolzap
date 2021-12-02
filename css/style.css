@@ -148,9 +148,9 @@
     align-items: center;
     cursor: pointer;
 }
-.contact-box:hover {
+.dark_bkg {
     background-color: #ebebeb;
-}
+} 
 
 .contact-box:last-child {
    border-bottom: none;

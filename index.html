@@ -49,7 +49,7 @@
 
                     <div class="contact-list">
 
-                        <div class="contact-box" v-for="(contact,i) in contacts" :class="{active : (contacts[reference] === contact)}" @click="callContact(i)">
+                        <div class="contact-box" v-for="(contact,i) in contacts" :class="{dark_bkg : (contacts[reference] === contact)}" @click="callContact(i)">
                             <img 
                                 :src="`img/avatar${contact.avatar}.jpg`" 
                                 :alt="contact.name"
@@ -86,8 +86,8 @@
                             <div class="mailing-box">
                                <ul>
                                 <li 
-                                v-for="(message, index) in contacts[reference].messages"
-                                :class="[ message.status === 'sent' ? 'sent' : 'received' ]">
+                                v-for="(message,i) in contacts[reference].messages"
+                                :class="message.status === 'sent' ? 'sent' : 'received'">
                                 <p>{{message.message}}</p>
                                 <span class="date">{{message.date}}</span>
                                </ul>
