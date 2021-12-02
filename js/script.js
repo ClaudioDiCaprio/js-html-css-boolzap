@@ -88,7 +88,7 @@ const app = new Vue({
           },
        ],
        reference: 0,
-       lastMsgPreview: ''
+       theMsg:'',
     },
     methods: {
        callContact(index) {
@@ -101,5 +101,22 @@ const app = new Vue({
             `${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
             return time;
       },   
+
+      pushing(item) {
+         this.contacts[this.reference].messages.push(item);
+      },
+
+      send(){
+         if(this.theMsg !== ''){
+            const msg = {
+               date: '10/01/2020 ' + this.Time(),
+               message: this.theMsg,
+               status: 'sent'
+            };
+            this.pushing(msg)
+
+            this.theMsg = '';
+         }
+      },
     }
  });

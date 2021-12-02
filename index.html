@@ -95,7 +95,13 @@
                     </div>
                     <div class="write">
                         <i class="far fa-smile"></i>
-                        <input type="text"  class="write-in" placeholder="   scrivi un messaggio" >
+                        <input 
+                            type="text"  
+                            class="write-in"
+                            placeholder="  scrivi un messaggio"
+                            v-model="theMsg"
+                            @keyup.enter="send();"
+                         >
                         <i class="fas fa-microphone"></i>
                     </div>
                 </div>
