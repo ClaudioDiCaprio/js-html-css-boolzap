@@ -55,8 +55,7 @@
 
                         <div 
                         class="contact-box"
-                        v-for="(contact,i) in contacts" 
-                        :class="{dark_bkg : (contacts[reference] === contact)}" 
+                        v-for="(contact,i) in contacts" :class="{dark_bkg : (contacts[reference] === contact)}" 
                         @click="callContact(i)"
                         v-if="contact.visible || lookTrough === ''">
                             <img 

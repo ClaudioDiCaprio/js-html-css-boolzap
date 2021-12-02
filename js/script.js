@@ -134,7 +134,7 @@ const app = new Vue({
       runTrough(){
          this.contacts.forEach(contact => {
             
-            if(contact.name.toLowerCase().includes(this.lookTrough.toLowerCase())){
+            if(!contact.name.toLowerCase().includes(this.lookTrough.toLowerCase())){
                contact.visible = false;
             }else if (this.lookTrough.toLowerCase === ''){
                contact.visible = true;
