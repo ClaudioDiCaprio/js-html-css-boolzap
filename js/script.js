@@ -118,5 +118,11 @@ const app = new Vue({
             this.theMsg = '';
          }
       },
+      
+      recieve(){
+         setTimeout(() =>{
+
+         },1500);
+      },
     }
  });
